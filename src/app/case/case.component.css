@@ -1,0 +1,50 @@
+.case-item {
+    border: 1px solid black;
+    background-color: whitesmoke;
+    border-radius: 5px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.shighlight{
+    padding-left: 20px;
+    padding-right: 20px;
+    color: white;
+}
+
+.ActionNeeded {
+    padding: 5px;
+    background-color: red;
+    border-radius: 20px;
+}
+.ActionNeeded::after {
+    font-family: FontAwesome;
+    content: "\f00d";
+    color:white;
+    font-size: 20px;
+}
+
+.Completed {
+    padding: 5px;
+    background-color: green;
+    border-radius: 20px;
+}
+.Completed::after {
+    font-family: FontAwesome;
+    content: "\f144";
+    color:white;
+    font-size: 20px;
+}
+
+.InProgress {
+    padding: 5px;
+    background-color: blue;
+    border-radius: 20px;
+}
+.InProgress::after {
+    font-family: FontAwesome;
+    content: "\f10c";
+    color:white;
+    font-size: 20px;
+}

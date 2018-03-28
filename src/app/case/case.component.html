@@ -1,0 +1,9 @@
+<div class="case-item mb-4" *ngFor="let patient of returnData">
+    <p class={{patient.statusKey}}></p>
+    <p>{{patient.name}}</p>
+    <p>Patient ID: {{patient.patientID}}</p>
+    <p>Date of Birth: {{patient.dob}}</p>
+    <p>Service ID: {{patient.serviceID}}</p>
+    <p class="shighlight" [style.background-color]="patient.service == 'CoPay' ? 'purple' : (patient.service == 'BV' ? 'green' : (patient.service == 'PA' ? 'orange' : '' ) ) ">
+      {{patient.service}}</p>
+</div>
