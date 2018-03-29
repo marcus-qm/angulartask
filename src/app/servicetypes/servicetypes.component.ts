@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit , EventEmitter, Output} from '@angular/core';
+
 
 @Component({
   selector: 'app-servicetypes',
@@ -7,9 +8,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ServicetypesComponent implements OnInit {
 
+  @Output() serviceToggled = new EventEmitter();
+
+  message:string;
+
   constructor() { }
 
   ngOnInit() {
+     
+  }
+
+
+  
+
+  toggleService(e) {
+    this.serviceToggled.emit(e);
   }
 
 }

@@ -2,22 +2,22 @@
 <hr>
 <div class="servicetype mb-4">
     <p><strong>Service Types</strong></p>
-    <div>
+    <div (click)="toggleService('green')">
         <span class="green"></span>
         <p>Benefits Verification</p>
     </div>
   
-    <div>
+    <div (click)="toggleService('yellow')">
         <span class="yellow"></span>
       <p>Prior Authorization</p>
     </div>
   
-    <div>
+    <div (click)="toggleService('purple')">
         <span class="purple"></span>
       <p>CoPay</p>
     </div>
 
-    <div>
+    <div (click)="toggleService('deepblue')">
         <span class="deepblue"></span>
       <p>Prescription Referral</p>
     </div>

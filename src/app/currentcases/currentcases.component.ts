@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, EventEmitter, Output } from '@angular/core';
 import { CaseComponent } from '../case/case.component';
 import { StatuskeyComponent } from "../statuskey/statuskey.component";
 
@@ -10,10 +10,14 @@ import { ServicetypesComponent } from "../servicetypes/servicetypes.component";
   styleUrls: ['./currentcases.component.css']
 })
 export class CurrentcasesComponent implements OnInit {
-
+  
   constructor() { }
 
   ngOnInit() {
+  }
+
+  handleToggle($event) {
+    console.log($event);
   }
 
 }

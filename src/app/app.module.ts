@@ -13,7 +13,9 @@ import { NavbarComponent } from './navbar/navbar.component';
 
 import { PatientdataService } from './services/patientdata.service';
 import { StatuskeyComponent } from './statuskey/statuskey.component';
-import { ServicetypesComponent } from './servicetypes/servicetypes.component'
+import { ServicetypesComponent } from './servicetypes/servicetypes.component';
+
+
 
 
 @NgModule({

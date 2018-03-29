@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-
+import { Component, OnInit, Input } from '@angular/core';
+ 
 
 import { PatientdataService } from "../services/patientdata.service";
 
@@ -10,14 +10,25 @@ import { PatientdataService } from "../services/patientdata.service";
 })
 export class CaseComponent implements OnInit {
   returnData: [patientJSON];
+  @Input() childMessage: string;
+
+  message:string;
+
+
 
   constructor(private data: PatientdataService) { }
 
   ngOnInit() {
 
+     
+
     this.data.getData().subscribe((res) => {
       this.returnData = res;
     })
+  }
+
+  handleToggle(e) {
+    console.log(e);
   }
 
 }

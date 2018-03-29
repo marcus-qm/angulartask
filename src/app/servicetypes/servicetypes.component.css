@@ -11,6 +11,14 @@
 
 .servicetype > div {
     display: flex;
+
+}
+
+.servicetype > div:hover {
+    cursor: pointer;
+    background-color: rgb(156, 156, 156);;    
+    color: white;
+    
 }
 
 .green {
